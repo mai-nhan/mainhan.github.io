@@ -12,7 +12,7 @@
 	padding: 0;
 }
 nav.navbar.navbar-light.bg-faded {
-    background-color: wheat;
+    background-color: #e8a94d;
 }
 
 a.nav-link {
@@ -62,6 +62,12 @@ li.nav-item:last-child {
 } */
 
 /* css resume */
+p {
+	color: #96a9a5;
+}
+p.title {
+	color: #000;
+}
 .resume-bg {
 	background-color: #f3f3f3;
 }
@@ -128,7 +134,7 @@ h1.resume-title {
 
 
 /*begin work*/
-#work {
+#work, #profile {
 	position: relative;
 }
 .work-list {
@@ -166,12 +172,16 @@ p.wi-i-detail {
     font-weight: bold;
     font-size: 25px;
     text-transform: capitalize;
+    color: #000;
 }
 .item-right img {
 	float: right;
 }
 .item-left .wi-info {
 	text-align: left;
+}
+.item-left .fas.fa-caret-right {
+	transform: rotateY(180deg);
 }
 .wl-btn-lm {
 	width: 20%;
@@ -198,66 +208,110 @@ p.wi-i-detail {
 	display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .wf-step .wf-text {
     position: relative;
     z-index: 2;
-    background-color: #000;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
 }
-.wf-step:first-child .wf-text::before {
-    content: '';
-    background-color: fuchsia;
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    top: -60px;
-    left: 0;
+.wf-text .wf-i {
+	color: #e8a94d; /*#f3a210*/
 }
-.wf-step:last-child .wf-text::after {
-    content: '';
-    background-color: fuchsia;
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    bottom: -60px;
-    left: 0;
+.wf-text .wf-s-name {
+	font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+.wf-text p {
+	margin: 0;
 }
 .wf-step .wf-img {
 	padding: 20px 0;
-	border-bottom: 2px dashed #ccc;
-	border-bottom-left-radius: 20px;
-	border-top-left-radius: 20px;
+	position: relative;
 }
 .wf-img img {
     margin: 30px auto;
     display: block;
     width: 50%;
 }
+.wf-img .wf-path {
+	position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    margin: 0;
+    padding: 0;
+    transform: translate(0, 50%);
+}
 .wf-step:nth-child(odd) .wf-text {
 	text-align: right;
-}
-.wf-step:nth-child(odd) .wf-img {
-	border-left: 2px dashed #ccc;
-	margin-left: -10px;
-}
-.wf-step:nth-child(odd) .wf-img img {
-	padding-left: 10px;
 }
 .wf-step:nth-child(even) {
 	flex-direction: row-reverse;
 }
-.wf-step:nth-child(even) .wf-img {
-	margin-right: -10px;
-	border-right: 2px dashed #ccc;
-	border-bottom-right-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-left-radius: unset;
+.wf-step:nth-child(even) .wf-path {
+	transform: rotateY(180deg) translate(0,50%)
 }
-.wf-step:nth-child(even) .wf-img img {
-	padding-right: 10px;
+.wf-step:last-child .wf-path {
+	display: none;
 }
 /*end work-flow*/
+
+/*begin profile*/
+.p-skills .fas {
+	color: #e8a94d;	
+    margin-bottom: 20px;
+}
+.ps-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.ps-award {
+    margin-bottom: 25px;
+}
+.ps-award .ps-a-name {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.ps-title, .ps-award .ps-a-name {
+	color: #000;
+}
+p.ps-a-detail {
+    font-size: 14px;
+}
+/*end profile*/
+
+/*begin contact*/
+div#contact {
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 30px;
+}
+h2.c-email, h2.c-phone {
+    margin: 30px 0;
+}
+h2.c-email {
+    text-decoration: underline 2px #1d1d1d;
+}
+.c-social {
+    margin: 60px 0;
+}
+i.cs-icon {
+    margin: 20px;
+    font-size: 25px;
+}
+#contact hr {
+    width: 30px;
+    display: inline-block;
+    border-color: #000;
+}
+/*end contact*/
+
 
 
 @media (max-width: 576px) {

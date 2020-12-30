@@ -6,7 +6,8 @@
 	<script type="text/javascript" src="vendor/bootstrap.js"></script>
  	<script type="text/javascript" src="1.js"></script>
 	<link rel="stylesheet" href="vendor/bootstrap.css">
-	<link rel="stylesheet" href="vendor/font-awesome.css">
+	
+	<link rel="stylesheet" href="vendor/all.css">
  	<link rel="stylesheet" href="1.css">
 </head>
 <body >
@@ -18,19 +19,19 @@
 	 			</a>
 	 			<ul class="nav navbar-nav float-xs-right">
 	 				<li class="nav-item active">
-	 					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	 					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="#">Giới thiệu</a>
+	 					<a class="nav-link" href="#about-me">Giới thiệu</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="#">Kinh nghiệm</a>
+	 					<a class="nav-link" href="#profile">Kinh nghiệm</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="#">Sản phẩm</a>
+	 					<a class="nav-link" href="#work">Sản phẩm</a>
 	 				</li>
 	 				<li class="nav-item">
-	 					<a class="nav-link" href="#">Liên hệ</a>
+	 					<a class="nav-link" href="#contact">Liên hệ</a>
 	 				</li>
 	 				<li class="nav-item">
 	 					<a class="nav-link" href="#">Comment</a>
@@ -47,9 +48,9 @@
  	<div class="about-me-banner container-fluid resume-bg">
  		<div class="container"><div class="row">
  			<div class="col-sm-4 myname-left">
-				<p class="m-l-fname font-weight-normal">Robert</p>
-				<p class="m-l-fname font-weight-bold">Long</p>
-				<p class="m-l-more font-weight-bold"><a href="#">About<i>+</i></a></p>
+				<p class="m-l-fname font-weight-normal title">Robert</p>
+				<p class="m-l-fname font-weight-bold title">Long</p>
+				<p class="m-l-more font-weight-bold title"><a href="#about-me">About  <i class="fas fa-caret-right"></i></a></p>
 			</div>
 			<div class="col-sm-8 myname-right">
 	 			<img src="images/me.png" alt="Image of mainhan">
@@ -63,24 +64,24 @@
  			<div class="am-skills row rp-distance">
  				<div class="col-lg-1 hidden-col">abc</div>
  				<div class="col-lg-2 am-s-items">
- 					<i>+</i>
+ 					<i class="fas fa-bezier-curve"></i>
  					<span>Product Design</span>
  				</div>
  				<div class="col-lg-2 am-s-items">
- 					<i>+</i>
- 					<span>Product Design</span>
+ 					<i class="fas fa-sliders-h"></i>
+ 					<span>UX Design</span>
  				</div>
  				<div class="col-lg-2 am-s-items">
- 					<i>+</i>
- 					<span>Product Design</span>
+ 					<i class="fas fa-mobile-alt"></i>
+ 					<span>Mobile Design</span>
  				</div>
  				<div class="col-lg-2 am-s-items">
- 					<i>+</i>
- 					<span>Product Design</span>
+ 					<i class="fas fa-desktop"></i>
+ 					<span>Development</span>
  				</div>
  				<div class="col-lg-2 am-s-items">
- 					<i>+</i>
- 					<span>Product Design</span>
+ 					<i class="far fa-user"></i>
+ 					<span>Team Lead</span>
  				</div>
  				<div class="col-lg-1 hidden-col">abc</div>
  			</div>
@@ -112,7 +113,7 @@
 	 				<div class="wi-info">
 	 					<p class="wi-i-title">aaa</p>
 	 					<p class="wi-i-detail">bbb</p>
-	 					<a href="#">+</a>
+	 					<a href="#"><i class="fas fa-caret-right"></i></a>
 	 				</div>
 	 			</div>
 	 			<div class="row work-item item-left">
@@ -120,7 +121,7 @@
 	 				<div class="wi-info">
 	 					<p class="wi-i-title">aaa</p>
 	 					<p class="wi-i-detail">bbb</p>
-	 					<a href="#">+</a>
+	 					<a href="#"><i class="fas fa-caret-right"></i></a>
 	 				</div>
 	 			</div>
 	 			<div class="row work-item item-right">
@@ -128,7 +129,7 @@
 	 				<div class="wi-info">
 	 					<p class="wi-i-title">aaa</p>
 	 					<p class="wi-i-detail">bbb</p>
-	 					<a href="#">+</a>
+	 					<a href="#"><i class="fas fa-caret-right"></i></a>
 	 				</div>
 	 			</div>
 	 			<div class="row work-item item-left">
@@ -136,7 +137,7 @@
 	 				<div class="wi-info">
 	 					<p class="wi-i-title">aaa</p>
 	 					<p class="wi-i-detail">bbb</p>
-	 					<a href="#">+</a>
+	 					<a href="#"><i class="fas fa-caret-right"></i></a>
 	 				</div>
 	 			</div>
 	 		</div>
@@ -153,134 +154,143 @@
  			<div class="row wf-step">
  				<div class="col-lg-4 wf-cover">
 	 				<div class="wf-text">
-	 					<p class="wf-i"><i>+</i></p>
+	 					<p class="wf-i title"><i class="fas fa-list-ul"></i></p>
 	 					<p class="wf-s-name">Briefing</p>
 	 					<p class="wf-s-detail">this is an example about a task in our work-flow. Click to see the detail.</p>
 	 				</div>
  				</div>
  				<div class="col-lg-4 wf-img">
  					<img src="images/wf1.png" alt="wf-img">
+ 					<img class="wf-path" src="images/dash-path.png" alt="wf-img">
  				</div>
  			</div>
  			<div class="row wf-step">
  				<div class="col-lg-4 wf-cover">
 	 				<div class="wf-text">
-	 					<p class="wf-i"><i>+</i></p>
-	 					<p class="wf-s-name">Briefing</p>
+	 					<p class="wf-i"><i class="fas fa-search"></i></p>
+	 					<p class="wf-s-name">Research</p>
 	 					<p class="wf-s-detail">this is an example about a task in our work-flow. Click to see the detail.</p>
 	 				</div>
  				</div>
  				<div class="col-lg-4 wf-img">
  					<img src="images/wf2.png" alt="wf-img">
+ 					<img class="wf-path" src="images/dash-path.png" alt="wf-img">
  				</div>
  			</div>
  			<div class="row wf-step">
  				<div class="col-lg-4 wf-cover">
 	 				<div class="wf-text">
-	 					<p class="wf-i"><i>+</i></p>
-	 					<p class="wf-s-name">Briefing</p>
+	 					<p class="wf-i"><i class="far fa-lightbulb"></i></p>
+	 					<p class="wf-s-name">Brainstorm</p>
 	 					<p class="wf-s-detail">this is an example about a task in our work-flow. Click to see the detail.</p>
 	 				</div>
  				</div>
  				<div class="col-lg-4 wf-img">
  					<img src="images/wf3.png" alt="wf-img">
+ 					<img class="wf-path" src="images/dash-path.png" alt="wf-img">
  				</div>
  			</div>
  			<div class="row wf-step">
  				<div class="col-lg-4 wf-cover">
 	 				<div class="wf-text">
-	 					<p class="wf-i"><i>+</i></p>
-	 					<p class="wf-s-name">Briefing</p>
+	 					<p class="wf-i"><i class="fas fa-bezier-curve"></i></p>
+	 					<p class="wf-s-name">Create</p>
 	 					<p class="wf-s-detail">this is an example about a task in our work-flow. Click to see the detail.</p>
 	 				</div>
  				</div>
  				<div class="col-lg-4 wf-img">
  					<img src="images/wf4.png" alt="wf-img">
+ 					<img class="wf-path" src="images/dash-path.png" alt="wf-img">
  				</div>
  			</div>
  			<div class="row wf-step">
  				<div class="col-lg-4 wf-cover">
 	 				<div class="wf-text">
-	 					<p class="wf-i"><i>+</i></p>
-	 					<p class="wf-s-name">Briefing</p>
+	 					<p class="wf-i"><i class="fas fa-rocket"></i></p>
+	 					<p class="wf-s-name">Launch</p>
 	 					<p class="wf-s-detail">this is an example about a task in our work-flow. Click to see the detail.</p>
 	 				</div>
  				</div>
  				<div class="col-lg-4 wf-img">
  					<img src="images/wf5.png" alt="wf-img">
+ 					<img class="wf-path" src="images/dash-path.png" alt="wf-img">
  				</div>
  			</div>
  		</div>
  	</div>
 
- 	<div id="profile" class="container">
- 		<h1 class="resume-title">Profile</h1>
- 		<p>These're something to you know more about me...</p>
- 		<div class="row">
- 			<div class="col-lg-3 resume-btn"><a href="#">Hire Me</a></div>
-		 	<div class="col-lg-3 resume-btn"><a href="#">Download Resume</a></div>
-		 </div>
- 		<div class="p-skills row">
- 			<div class="col-3">
- 				<i>+</i>
- 				<p class="ps-title">Awards</p>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 			</div>
- 			<div class="col-3">
- 				<i>+</i>
- 				<p class="ps-title">Awards</p>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 			</div>
- 			<div class="col-3">
- 				<i>+</i>
- 				<p class="ps-title">Awards</p>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 			</div>
- 			<div class="col-3">
- 				<i>+</i>
- 				<p class="ps-title">Awards</p>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 				<div class="ps-award">
- 					<p class="ps-a-name">award 1</p>
- 					<p>this is an award</p>
- 				</div>
- 			</div>
- 		</div>
+ 	<div id="profile" class="container-fluid resume-bg resume-part">
+ 		<img src="images/hide-panel.png" class="img-fluid if-reverse">
+ 		<div class="container">
+	 		<h1 class="resume-title">Profile</h1>
+	 		<p>These're something to you know more about me...</p>
+	 		<div class="row">
+	 			<div class="col-lg-3 resume-btn"><a href="#">Hire Me</a></div>
+			 	<div class="col-lg-3 resume-btn"><a href="#">Download Resume</a></div>
+			 </div>
+	 		<div class="p-skills row">
+	 			<div class="col-lg-3">
+	 				<i class="fas fa-trophy"></i>
+	 				<p class="ps-title">Awards</p>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Site of the day</p>
+	 					<p class="ps-a-detail">Melarine Daveid</p>
+	 				</div>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">award 1</p>
+	 					<p class="ps-a-detail">this is an award</p>
+	 				</div>
+	 			</div>
+	 			<div class="col-lg-3">
+	 				<i class="fas fa-book-open"></i>
+	 				<p class="ps-title">Education</p>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Graphic Design Diploma</p>
+	 					<p class="ps-a-detail">Modern Art University 2015</p>
+	 				</div>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">award 1</p>
+	 					<p class="ps-a-detail">this is an award</p>
+	 				</div>
+	 			</div>
+	 			<div class="col-lg-3">
+	 				<i class="fas fa-history"></i>
+	 				<p class="ps-title">Experience</p>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Head of Design</p>
+	 					<p class="ps-a-detail">ADC Inc - 2012 - Current</p>
+	 				</div>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Sr. Graphic Designer</p>
+	 					<p class="ps-a-detail">XYZ Digital Studio 2010 2012</p>
+	 				</div>
+	 			</div>
+	 			<div class="col-lg-3">
+	 				<i class="fas fa-mug-hot"></i>
+	 				<p class="ps-title">Skills</p>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Html/Css</p>
+	 					<p class="ps-a-detail">this is an award</p>
+	 				</div>
+	 				<div class="ps-award">
+	 					<p class="ps-a-name">Photoshop</p>
+	 					<p class="ps-a-detail">this is an award</p>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+ 		<img src="images/hide-panel.png" class="img-fluid" >
  	</div>
 
- 	<div id="contact" class="container">
+ 	<div id="contact" class="container-fluid">
  		<h1 class="resume-title">Contact</h1>
- 		<p class="c-email">mainhan1903@gmail.com</p>
- 		<p class="c-phone">0346971384</p>
+ 		<h2 class="c-email">mainhan1903@gmail.com</h2>
+ 		<h2 class="c-phone">0346971384</h2>
 		<div class="c-social">
-			<i class="cs-icon">fb</i>
-			<i class="cs-icon">skype</i>
-			<i class="cs-icon">zalo</i>
-			<i class="cs-icon">ins</i>
+			<i class="cs-icon fab fa-facebook-f"></i>
+			<i class="cs-icon fab fa-skype"></i>
+			<i class="cs-icon fab fa-twitter"></i>
+			<i class="cs-icon fab fa-instagram"></i>
 		</div>
 		<p>and the last is sent to you, who want to work with... ^_^</p>
 		<hr>
