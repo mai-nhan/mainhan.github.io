@@ -47,7 +47,26 @@ li.nav-item:last-child {
 .about-me-banner .myname-right img {
 	width: 70%
 }
-
+#mouse {
+	position: absolute;
+    bottom: 20%;
+    left: 30%;
+    width: 35px;
+    height: 55px;
+    border: 1px solid #000;
+    border-radius: 40px;
+}
+#mouse::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: calc(50% - 2px);
+	border: 2px solid #000;
+	height: 12px;
+}
+#mouse:hover {
+    cursor: pointer;
+}
 /*.about-me::after {
 	content: "";
     width: 100%;
